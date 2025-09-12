@@ -327,7 +327,7 @@ aside:
   button: true
   mobile: true
   # Position: left / right
-  position: left # right
+  position: right
   display:
     archive: true
     tag: true
