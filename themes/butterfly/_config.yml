@@ -1148,7 +1148,7 @@ CDN:
     # disqusjs_css:
     # docsearch_css:
     # docsearch_js:
-    # egjs_infinitegrid:
+    egjs_infinitegrid: https://cdn.bootcdn.net/ajax/libs/egjs-infinitegrid/4.12.0/infinitegrid.cjs.min.js
     # fancybox:
     # fancybox_css:
     # fireworks:
@@ -1170,14 +1170,14 @@ CDN:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    # pjax:
+    pjax: https://cdn.bootcdn.net/ajax/libs/pjax/0.2.8/pjax.min.js
     # sharejs:
     # sharejs_css:
     # snackbar:
     # snackbar_css:
     # translate:
     # twikoo:
-    # typed:
+    typed: https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js
     # utils:
     # valine:
     # waline_css:
