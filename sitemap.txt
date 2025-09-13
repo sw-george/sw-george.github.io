@@ -1,4 +1,13 @@
 https://sw-george.github.io/about/index.html
+https://sw-george.github.io/sw-module/live2d-widget/demo/login.html
+https://sw-george.github.io/sw-module/live2d-widget/demo/demo.html
+https://sw-george.github.io/sw-module/live2d-widget/dist/waifu-tips.json
+https://sw-george.github.io/sw-module/live2d-widget/tsconfig.json
+https://sw-george.github.io/sw-module/live2d-widget/renovate.json
+https://sw-george.github.io/sw-module/live2d-widget/README.html
+https://sw-george.github.io/sw-module/live2d-widget/README.en.html
+https://sw-george.github.io/sw-module/live2d-widget/package.json
+https://sw-george.github.io/sw-module/live2d-widget/package-lock.json
 https://sw-george.github.io/rss/index.html
 https://sw-george.github.io/notes/index.html
 https://sw-george.github.io/tags/index-1.html

@@ -11,6 +11,87 @@
   </url>
   
   <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/demo/login.html</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/demo/demo.html</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/dist/waifu-tips.json</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/tsconfig.json</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/renovate.json</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/README.html</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/README.en.html</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/package.json</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sw-george.github.io/sw-module/live2d-widget/package-lock.json</loc>
+    
+    <lastmod>2025-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sw-george.github.io/rss/index.html</loc>
     
     <lastmod>2025-09-09</lastmod>
