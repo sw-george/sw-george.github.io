@@ -1,6 +1,6 @@
+https://sw-george.github.io/about/index.html
 https://sw-george.github.io/rss/index.html
 https://sw-george.github.io/notes/index.html
-https://sw-george.github.io/about/index.html
 https://sw-george.github.io/tags/index-1.html
 https://sw-george.github.io/categories/index.html
 https://sw-george.github.io/tags/index.html
