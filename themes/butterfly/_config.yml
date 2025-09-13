@@ -121,6 +121,8 @@ cover:
   # When cover is not set, the default cover is displayed
   default_cover:
     # - xxx.jpg
+    # - /sw-module/images/butterfly-docs-changelog-cover.png
+    - /sw-module/images/George-Blog-docs-cover.png
 
 # Replace Broken Images
 error_img:
@@ -256,14 +258,26 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# Sponsor/reward
+# Sponsor/reward 赞助商/奖励
+# 获取打赏图片,点微信界面右上角的+号 --> Money --> Receive Money / reward Money --> save
 reward:
-  enable: false
-  text:
+  # If true, reward will be displayed in every article by default.
+  enable: true  # false
+  text: 以文会友，让我们在文境中交流、相识，共同提升！感谢您的鼓励，我将继续分享或原创更多精彩内容！ # weixin://contacts/profile/teawc119
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
+    # wechat点开后可以选金额、留言和显示名称等
+    # ￥1 您的心意是我的动力！
+    # ￥5 你的鼓励是的前行的力量！
+    # ￥10 您的赞赏将激励我坚定前行！
+    # - img: /images/wechat-1.png # /img/wechat.jpg
+    #   link: 
     #   text: wechat
+    # - img: /images/wechat-5.png # /img/wechat.jpg
+    #   link: 
+    #   text: wechat
+    - img: /sw-module/reward/img/wechat-10.png # /img/wechat.jpg
+      link: 
+      text: wechat
     # - img: /img/alipay.jpg
     #   link:
     #   text: alipay
@@ -412,9 +426,9 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true  # false
   # The text of a button
-  default: 繁
+  default: '简'  # 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
@@ -476,9 +490,9 @@ copy:
     enable: false
     limit_count: 150
 
-# Need to install the hexo-wordcount plugin
+# Need to install the hexo-wordcount plugin 字数统计
 wordcount:
-  enable: false
+  enable: true  # false
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
@@ -1046,7 +1060,7 @@ aplayerInject:
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true  # false
   position: bottom-left
   # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
@@ -1107,8 +1121,10 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/sw-module/reward/css/showAppreciation.css">
   bottom:
     # - <script src="xxxx"></script>
+    - <script src="/sw-module/reward/js/showAppreciation.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
