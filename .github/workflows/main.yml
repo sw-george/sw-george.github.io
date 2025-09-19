@@ -48,15 +48,14 @@ jobs:
         run: |
           hexo clean && hexo g
           echo "build blog successful"
-      - name: Deploy Blog # 设置 git 信息并推送静态博客文件
+      - name: Deploy Blog # 设置 git 信息并推送静态博客文件 # git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:main
         run: |
           cd ./public
           git init
           git config user.name "${{secrets.GIT_NAME}}"
           git config user.email "${{secrets.GIT_EMAIL}}"
           git add .
-          git commit -m "Update"
-          # git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:main
-          git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io.git" main:deploy
+          git commit -m "Update"  
+          git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io,deploy"
 
       - run: echo "Deploy Successful!"
