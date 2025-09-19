@@ -57,6 +57,6 @@ jobs:
           git add .
           git commit -m "Update"
           # git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:main
-          git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io.git" master:deploy
+          git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io.git" main:deploy
 
       - run: echo "Deploy Successful!"
