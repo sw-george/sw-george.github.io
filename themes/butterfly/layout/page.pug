@@ -27,6 +27,11 @@ block content
         include includes/page/404.pug
       when 'shuoshuo'
         include includes/page/shuoshuo.pug
+      //- george add categories and photo
+      when 'categories'
+        include includes/page/categories.pug
+      when 'photo'
+        include includes/page/photo.pug
       default
         include includes/page/default-page.pug
         +commentLoad

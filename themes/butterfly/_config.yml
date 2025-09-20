@@ -22,20 +22,22 @@ menu:
   Home: / || fas fa-home
   Page||fa-fw fas fa-compass:
     Archives: /archives/ || fa-fw fas fa-archive
-    Tags: /tags || fa-fw fas fa-tags
-    Categories: /categories || fa-fw fas fa-folder-open
-    Gallery: /gallery || fa-fw fas fa-images
+    Tags: /tags/ || fa-fw fas fa-tags
+    Categories: /categories/ || fa-fw fas fa-folder-open
+    Gallery: /gallery/ || fa-fw fas fa-images
+    Shuoshuo: /shuoshuo/ || fa-fw fas fa-hpptalk
     Talking: /talking/ || fa-fw fas fa-thumbs-up
+    Link: /link/ || fa-fw fas fa-link
   Study||fa-fw fas fa-book:
-    Math: /math || fa-fw fas fa-folder-open
+    Math: /math/ || fa-fw fas fa-folder-open
   Media||fas fa-list:
-    Music: /Music || fa-fw fas fa-music
-    Movies: /Movies || fa-fw fas fa-video
+    Music: /Music/ || fa-fw fas fa-music
+    Movies: /Movies/ || fa-fw fas fa-video
   Messageboard: /messageboard || fa-fw fas fa-comment-dots
   About: /about/ || fa-fw fas fa-heart
-  # Language||fa-fw fas fa-language:
-  #  English: /en/ || fa-fw fas fa-e
-  #  中文: /zh-CN/ || fa-fw fas fa-c
+  Language||fa-fw fas fa-language:
+    English: /en/ || fa-fw fas fa-e
+    中文: /zh-CN/  || fa-fw fas fa-c
 
 # --------------------------------------
 # Code Blocks Settings
@@ -227,7 +229,7 @@ subtitle:
 # 7: Masonry layout - Info displayed on the cover  # 7: 瀑布流布局 - 信息直接显示在封面图上
 index_layout: 6  # 3
 
-# 首页文章展示
+# 首页文章摘要显示
 # Display the article introduction on homepage  # 首页文章摘要显示设置
 # 1: description  # 1: 显示文章描述的description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)  # 2: 智能显示（存在description则显示，否则显示自动截取的内容）
@@ -242,9 +244,10 @@ index_post_content:
 # Post Settings
 # --------------------------------------
 
+# 文章目录,toc是markdown自带目录，但hexo不支持，需要npm install hexo-toc --save
 toc:
-  post: true
-  page: false
+  post: true  # 文章
+  page: false  # 页面
   number: true
   expand: false
   # Only for post
@@ -302,7 +305,7 @@ related_post:
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2  # 1
 
 # Displays outdated notice for a post
 noticeOutdate:
@@ -556,9 +559,10 @@ search:
     top_n_per_article: 1
     # Unescape html strings to the readable one.
     unescape: false
-    # Enable pagination for search results
+    # Enable pagination for search results 分页
     pagination:
       enable: true  # false
+
       # Number of search results per page
       hitsPerPage: 8
     CDN:
@@ -591,7 +595,7 @@ share:
     item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------
-# Comments System
+# Comments System 评论系统，后台要自行部署或在线系统，如：gitalk、twikoo、waline等
 # --------------------------------------
 
 comments:
@@ -599,16 +603,16 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Gitalk
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
   # Display comment count in post's top_img
-  count: false
+  count: true  # false
   # Display comment count in Home Page
-  card_post_count: false
+  card_post_count: true  # false
 
 # Disqus
 # https://disqus.com/
@@ -632,11 +636,11 @@ livere:
 # Gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id:
-  client_secret:
-  repo:
-  owner:
-  admin:
+  client_id: Ov23libYxJa9evwcqJK3
+  client_secret: be87e3596b1441dc0e98daa5f439b832da651ff1
+  repo: sw-george.github.io
+  owner: sw-george
+  admin: sw-george
   option:
 
 # Valine
@@ -968,14 +972,20 @@ clickShowText:
   mobile: false
 
 # --------------------------------------
-# Lightbox Settings
+# Lightbox Settings 图片放大功能
 # --------------------------------------
 
 # Choose: fancybox / medium_zoom
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: medium_zoom
+
+# george add medium_zoom
+medium_zoom:
+  enable: true
+  delay: 300
+  margin: 80
 
 # --------------------------------------
 # Tag Plugins settings
@@ -1122,9 +1132,14 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/sw-module/reward/css/showAppreciation.css">
+    - <link rel="stylesheet" href="/sw-module/gallery/css/photo.css"> # 动态相册样式
   bottom:
     # - <script src="xxxx"></script>
-    - <script src="/sw-module/reward/js/showAppreciation.js"></script>
+    - <script type="text/javascript" src="/sw-module/reward/js/showAppreciation.js"></script>
+    - <script type="text/javascript" src="/sw-module/gallery/js/waterfall.min.js"></script> # memos动态相册 - waterfall
+    - <script type="text/javascript" src="/sw-module/gallery/js/imgStatus.min.js"></script> # memos动态相册 - imgStatus
+    - <script type="text/javascript" src="/sw-module/gallery/js/lately.min.js"></script> # memos动态相册 - lately
+    - <script type="text/javascript" src="/sw-module/gallery/js/photo.js"></script> # memos动态相册 - 格式链JS
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1220,9 +1235,53 @@ swiper:
   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
 
-  # 看板娘
-  live2d:  
-    enable: true
+# Live2D # 看板娘
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  enable: true
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # scriptFrom: unpkg # unpkg CDN
+  # scriptFrom: https://npm.elemecdn.com/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-tororo # 模型名字
+    # use: wanko # 博客根目录/live2d_models/ 下的目录名
+    # use: ./wives/wanko # 相对于博客根目录的路径
+    # use: https://npm.elemecdn.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+    scale: 1
+    hHeadPos: 0.5
+    vHeadPos: 0.618
+  display:
+    superSample: 2
+    width: 150 #控制看板娘大小
+    height: 300 #控制看板娘大小
+    position: right #控制看板娘位置
+    hOffset: 0  # 控制看板娘平行位置
+    vOffset: -20  # 控制看板娘垂直位置
+  mobile:
+    show: true # 手机显示开关，建议关闭
+    scale: 0.5   
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 0.2
 
-  # ------------------------------------------------------------------
-  # george add begin
+# HexoPlusPlus Talk
+# see https://hexoplusplus.js.org
+hpptalk:
+  enable: true 
+  domain: sw-george.github.io  # yourdomain # 请自行更改
+  path: talk
+  limit: 8
+  start: 0 
+  js: https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@latest/talk_user.js
+  css: https://fastly.jsdelivr.net/gh/QSlotus/HexoPlusPlus@latest/talk.css
+  option:
+  front_matter: 
+
+# ------------------------------------------------------------------
+# george add begin

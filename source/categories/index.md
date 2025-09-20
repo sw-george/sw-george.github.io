@@ -1,4 +1,6 @@
 ---
 title: categories
-date: 2025-09-09 15:02:28
+date: 2025-09-15 04:03:54
+type: "categories"
+comments: false
 ---
