@@ -58,8 +58,7 @@ jobs:
           # git branch -m main
           git add .
           git commit -m "Update Blog"  
-          # git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io" main:deploy
-          git push origin main:deploy
+          git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io" deploy
 
 
       - run: echo "Deploy Successful!"
