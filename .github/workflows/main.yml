@@ -57,6 +57,7 @@ jobs:
           git config --global init.defaultBranch main
           git branch -m main
           ssh-keygen -t rsa -b 4096 -C "lzysum1@outlook.com"
+          git remote set-url origin <SSH URL>
           git add .
           git commit -m "Update Blog"  
           git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io" main:deploy
