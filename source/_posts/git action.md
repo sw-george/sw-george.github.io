@@ -13,8 +13,3 @@ add git actions main
 sssjfjfjdsjfjdfj
 
 ddslsg学是不能actions
-
-kfkkfkfkkooeeoeqwe
-
-
-kjdsfdfkdksfdk
