@@ -55,6 +55,10 @@ jobs:
           git config user.name "${{secrets.GIT_NAME}}"
           git config user.email "${{secrets.GIT_EMAIL}}"
           git config --global init.defaultBranch main
+          git config --list
+          git config --global --edit
+          git config --global user.name "sw-george"
+          git config --global user.password "#lzy123456"
           git branch -m main
           git add .
           git commit -m "Update Blog"  
