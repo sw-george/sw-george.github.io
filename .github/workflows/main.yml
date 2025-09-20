@@ -58,6 +58,7 @@ jobs:
           # git branch -m main
           git add .
           git commit -m "Update Blog"  
+          git pull "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io" --rebase
           git push --force --quiet "https://github.com/${{secrets.GIT_NAME}}/${{secrets.GIT_NAME}}.github.io" deploy
 
 
