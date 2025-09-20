@@ -1,10 +1,10 @@
 ---
-abbrlink: ''
+abbrlink: 50451
 categories:
-- - github
+  - - github
 date: '2025-09-19T13:17:40.071826+00:00'
 tags:
-- deploy
+  - deploy
 title: git action main
 updated: '2025-09-19T21:17:41.089+08:00'
 ---
